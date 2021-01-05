@@ -1,4 +1,4 @@
-package com.github.git_leon;
+package com.github.curriculeon;
 
 import java.util.Date;
 
