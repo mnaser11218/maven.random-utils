@@ -105,7 +105,8 @@ public class RandomUtilsTest {
         Integer numberOfIterations = charDelta * stringLength;
         for (int i = 0; i < numberOfIterations; i++) {
             // create a random string
-            String randomString = RandomUtils.createString(min, max, 15);
+            String randomString = RandomUtils.createString(min, max, stringLength);
+            Assert.assertEquals(stringLength, randomString.length());
 
             // check each character of string
             for (char character : randomString.toCharArray()) {
@@ -126,8 +127,11 @@ public class RandomUtilsTest {
         for (int i = 0; i < numberOfIterations; i++) {
             // create a random string array
             String[] randomStrings = RandomUtils.createStrings(min, max, stringLength, numberOfStrings);
+            Assert.assertEquals(numberOfStrings, randomStrings.length);
             for (String randomString : randomStrings) {
                 // check each character of string
+
+                Assert.assertEquals(stringLength, randomString.length());
                 for (char character : randomString.toCharArray()) {
                     boolean outcome = RangeChecker.isInRange(character, min, max);
                     Assert.assertTrue(outcome);
