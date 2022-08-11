@@ -3,19 +3,48 @@
 ### **Objective:**
 * The purpose of this repository is to generate random objects; Floats, Doubles, Longs, Integers, Strings, Dates
 
-### **Instructions:**
+## How to Download
 
-1. Fork this Repository
-    * [fork](https://help.github.com/articles/fork-a-repo/) this repository to your personal github account
-    * [clone](https://help.github.com/articles/cloning-a-repository/) **your** `forked` repository to your local machine.
-    * Complete steps 2 and 3
-    * `git add` your changes to the list of your `commited` files.
-    * `git commit` your added files to the list of your `staged` files.
-    * `git push` your staged files to your remote repository.
-    * submit a `pull request` which compares curriculeon `master` to your `master`.
-2. Begin by first ensuring the `main` method in your `curriculeonRocks` class prints `"curriculeon Rocks!"` upon execution.
-3. Complete each of the method stubs in each of the `main` classes provided.
-    * `main` classes are located in `src.main.java.com.github.curriculeon`
-    * There are comments above each method stub to describe the expected behavior.
-4. Upon completion, open and run the `TestSuite` class to ensure that all tests have 100% success.
-    * `TestSuite` is located in `src.main.java.com.github.curriculeon`
+#### Part 1 - Forking the Project
+* To _fork_ the project, click the `Fork` button located at the top right of the project.
+
+
+#### Part 2 - Navigating to _forked_ Repository
+* Navigate to your github profile to find the _newly forked repository_.
+* Copy the URL of the project to the clipboard.
+
+#### Part 3 - Cloning _forked_ repository
+* Clone the repository from **your account** into the `~/dev` directory.
+    * if you do not have a `~/dev` directory, make one by executing the following command:
+        * `mkdir ~/dev`
+    * navigate to the `~/dev` directory by executing the following command:
+        * `cd ~/dev`
+    * clone the project by executing the following command:
+        * `git clone https://github.com/MYUSERNAME/NAMEOFPROJECT`
+
+#### Part 4 - Check Build
+* Ensure that the tests run upon opening the project.
+    * You should see `Tests Failed: 99 of 99 tests`
+
+
+
+
+
+
+
+## How to Submit
+
+#### Part 1 -  _Pushing_ local changes to remote repository
+* from a _terminal_ navigate to the root directory of the _cloned_ project.
+* from the root directory of the project, execute the following commands:
+    * add all changes
+        * `git add .`
+    * commit changes to be pushed
+        * `git commit -m 'I have added changes'`
+    * push changes to your repository
+        * `git push -u origin master`
+
+#### Part 2 - Submitting assignment
+* from the browser, navigate to the _forked_ project from **your** github account.
+* click the `Pull Requests` tab.
+* select `New Pull Request`
